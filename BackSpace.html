@@ -1,0 +1,323 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>BackSpace</title>
+        <script>
+		var isMobile = "N";
+		var CONSTANT_PC = "N";
+		var CONSTANT_MOBILE = "N";
+		var _menuCode = '00';
+		</script>
+        <script src="css_js/jquery.js"></script>
+		<script src="css_js/common.js"></script>
+        <script src="css_js/madebykm.js"></script>
+        <LINK href="css_js/pc.css" rel="stylesheet" type="text/css">
+        <LINK href="css_js/madecss.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+    	<div class="topbt">
+        	<a href="#top"><img src="img/top.png" width="100%"></a>
+        </div>
+    	<div class="sideall">
+        <button type="button" class="bt" onclick="sidebox()"><div id="togo"></div></button>
+    	<div class="side">
+     
+            <!--
+            <div>
+            	<ul class="sf-menu sf-vertical">
+            		<li>
+                		<a>태양계</a>
+                    	<ul>
+                    		<li><a>수성</a></li>
+                       		<li><a>금성</a></li>
+                        	<li><a>지구</a></li>
+                        	<li><a>화성</a></li>
+                        	<li><a>목성</a></li>
+                        	<li><a>토성</a></li>
+                        	<li><a>천왕성</a></li>
+                        	<li><a>해왕성</a></li>
+                    	</ul>
+                	</li>
+                	<li>
+                		<a>테라포밍</a>
+                		<ul>
+                    		<li><a>달 테라포밍</a></li>
+                        	<li><a>화성 테라포밍</a></li>
+                    	</ul>
+                	</li>
+                	<li><a>달</a></li>
+                	<li><a>제작자</a></li>
+            	</ul>
+            </div>
+            -->       
+            <div class="d_gnb">
+            		<a href="BackSpace.html"><h1>BackSpace</h1></a>
+                   <ul class="gnb_corp"> <!-- 메뉴선택시 gnb_select클래스 추가 -->
+                        <li><!-- 1뎁스메뉴 클릭시 on클래스 추가 -->
+                            <a class="link_gnb link_gnb1" id="link_gnb1" onclick="javascript:;selectMenu(event, 'link_gnb1')" onfocus="javascript:;selectMenu(event, 'link_gnb1')" href="javascript:;"><span class="ir_wa">태양계</span></a>
+                            <ul class="gnb_sub sub_about">
+                                <li>	<!-- 2뎁스메뉴 클릭시 on클래스 추가 -->
+                                    <a class="link_sub link_sub1" id="page0101" href="#">
+                                        <span class="ir_wa">수성</span>
+                                    </a>
+                                </li>
+                                <!--li><a id="page0102" href="/about/ci" class="link_sub link_sub2"><span class="ir_wa">CI소개</span></a></li-->
+                                <li>
+                                    <a class="link_sub link_sub2" id="page0106" href="#">
+                                        <span class="ir_wa">금성</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link_sub link_sub3" id="page0104" href="#">
+                                        <span class="ir_wa">지구</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link_sub link_sub4" id="page0103" href="#">
+                                        <span class="ir_wa">화성</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link_sub link_sub5" id="page0108" href="#">
+                                        <span class="ir_wa">목성</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link_sub link_sub6" id="page0108" href="#">
+                                        <span class="ir_wa">토성</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link_sub link_sub7" id="page0108" href="#">
+                                        <span class="ir_wa">천왕성</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link_sub link_sub8" id="page0108" href="#">
+                                        <span class="ir_wa">해왕성</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a class="link_gnb link_gnb2" href="Moon.html" target="_blank"><span class="ir_wa">달</span></a></li>
+                        <li>
+                            <a class="link_gnb link_gnb3" id="link_gnb3" onclick="javascript:;selectMenu(event, 'link_gnb3')" onfocus="javascript:;selectMenu(event, 'link_gnb3')" href="javascript:;"><span class="ir_wa">테라포밍</span></a>
+                            <ul class="gnb_sub sub_recruit">
+                                <li>
+                                    <a id="page0401" href="#" class="link_sub link_sub1"><span class="ir_wa">달 테라포밍</span></a>
+                                </li>
+                                    <li class="">
+                                        <a id="page0402" href="#" class="link_sub link_sub1">
+                                            <span class="ir_wa">화성 테라포밍</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a id="page0404" href="#" class="link_sub link_sub3">
+                                            <span class="ir_wa">금성 테라포밍</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a class="link_gnb link_gnb4" id="link_gnb4" onclick="javascript:;selectMenu(event, 'link_gnb4')" onfocus="javascript:;selectMenu(event, 'link_gnb4')" href="javascript:;"><span class="ir_wa">새소식</span></a>
+                            <ul class="gnb_sub sub_news">
+                                <li>
+                                    <a class="link_sub link_sub1" id="page0301" href="#">
+                                        <span class="ir_wa">보도자료</span>
+                                    </a>
+                                </li> <!-- 2뎁스메뉴 클릭시 on클래스 추가 -->
+                                <li>
+                                    <a class="link_sub link_sub2" id="page0302" href="#">
+                                        <span class="ir_wa">NASA 영상</span>
+                                    </a>
+                                </li> <!-- 2뎁스메뉴 클릭시 on클래스 추가 -->
+                                <!-- 2016-10-07 추가 -->
+                                <li>
+                                    <a class="link_sub link_sub3" id="page0303" href="#">
+                                        <span class="ir_wa">오늘의 뉴스</span>
+                                    </a>
+                                </li>
+                                <!-- // 2016-10-07 추가 -->
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="link_gnb link_gnb5" id="link_gnb5" onclick="javascript:;selectMenu(event, 'link_gnb5')" onfocus="javascript:;selectMenu(event, 'link_gnb5')" href="javascript:;"><span class="ir_wa">게시판</span></a>
+                            <ul class="gnb_sub sub_customer">
+                                <li>
+                                    <a class="link_sub link_sub1" id="page0801" href="#">
+                                        <span class="ir_wa">자유 게시판</span>
+                                    </a>
+                                </li> <!-- 2뎁스메뉴 클릭시 on클래스 추가 -->
+								<li>
+									<a class="link_sub link_sub2" id="page0802" href="#" target="_blank">
+										<span class="ir_wa">질문 게시판</span>
+									</a>
+								</li>
+								<li>
+									<a class="link_sub link_sub3" id="page0803" href="#" target="_blank">
+										<span class="ir_wa">연구센터</span>
+									</a>
+								</li>
+                            </ul>
+                        </li>
+                        <li><a class="link_gnb link_gnb6" href="#" target="_blank"><span class="ir_wa">제작자</span></a></li><!-- 2015-01-21 추가. -->
+                    </ul>
+            	</div>
+                <footer>
+                
+                	<div><a href="BackSpace.html"><img src="img/rss.png"></a></div>
+                    <div><a href="http://www.twitter.com" target="_new"><img src="img/tw.png"></a></div>
+                    <div><a href="http://www.facebook.com" target="_new"><img src="img/face.png"></a></div>
+                  	<div><a href="http://www.youtube.com" target="_new"><img src="img/you.png"></a></div>
+                    <b style="font-size:12px">Copyright © BackSpace Corp.</b>
+                </footer>
+           </div>
+           </div>
+            <div class="main" id="top">
+        		<div class="left">
+            		<div style="width:100%; overflow:hidden; text-align:center"> <!--overflow 이게 안으로 숨겨줌-->
+                		<img src="img/earth.jpg" class="main_img">
+                	</div>
+                	<div class="m2">
+           			  <div class="box">
+                           		  	<div class="textbox">
+                            			<h3>News</h3>
+                            		</div>
+                            		<br />
+                                    <h2>"AI로 외계인 찾는다"···우주로 간 머신러닝</h2>
+                                    <br />
+                					<span style="display:block;word-break:break-all;">인공지능(AI) 기술이 지구 밖으로 지평을 넓힌다. 생명체 가능성이 있는 행성을 탐색하고 예측하는 데 AI 기술이 활용될 전망이다.</span>
+                                    <br />
+                                    <br />
+                                    <h2>"32.7광년 떨어진 곳에서' 슈퍼 지구' 찾았다"</h2>
+                                    <br />
+                                    
+                					<span style="display:block;word-break:break-all;">지구에서 32.7광년(1광년=10조㎞) 떨어진 곳에 슈퍼지구로 추측되는 적색왜성을 발견했다는 주장이 나와 학계의 관심이 쏠리고 있다.
+</span>
+                        </div>
+                        <hr width=70% color="#202020">
+                        <div class="topbox">
+                    		<a href="#">
+                				<div class="box">
+                					<div class="boximg">
+                                		<img src="img/spaceman.jpg" class="img_roll" width="100%">
+                                	</div>
+                            		<br />
+                            		<br>
+                            		<div class="textbox">
+                            			<h3>Astronaut</h3>
+                            		</div>
+                            		<br />
+                            		<p>
+                            			우주 비행사가 궁금하진 않나요?<br>
+                            			우주의 한발자국 내딛은 그들을 만나보세요.<br>
+                            		</p>
+                        		</div>
+                        	</a>
+                        </div>
+                         <hr width=70% color="#202020">
+                	</div>
+                	<div class="m2">
+                    	<div class="topbox">
+                        	<a href="#">
+                    			<div class="box">
+                                	<div class="boximg">
+                                		<img src="img/earth2.jpg" class="img_roll" width="100%">
+                                	</div>
+                                    <br />
+                            		<br>
+                           		  	<div class="textbox">
+                            			<h3>SolarSystem</h3>
+                            		</div>
+                            		<br />
+                                    <h2>지구</h2>
+                            		<br>
+                					<span style="display:block;word-break:break-all;">우리가 살고 있는 푸른 행성이 바로 지구이다. 우주에서 봤을 때 푸른색의 바다, 녹색의 산과 갈색의 흙에 흰색의 구름이 조화를 이루고 있는 아름다운 행성이다.</span>
+                        		</div>
+                            </a>
+                         </div>
+                         <div class="topbox">
+                            <a href="#">
+                   				<div class="box">
+                            		<div class="boximg">
+                                		<img src="img/Mars_terraforming.jpg" class="img_roll" width="100%">
+                                	</div>
+                                    <br />
+                            		<br>
+                           		  	<div class="textbox">
+                            			<h3>Terraforming</h3>
+                            		</div>
+                            		<br />
+                                    <h2>화성 테라포밍</h2>
+                            		<br>
+               					<span style="display:block;word-break:break-all;">지구와 가까운 화성 테라 포밍 가능할까요?</span>
+                       		  </div>
+                            </a>
+                        </div>
+                        <div class="topbox">
+                            <a href="#">
+                   				<div class="box">
+                            		<div class="boximg">
+                                		<img src="img/admin.png" class="img_roll" width="100%">
+                                	</div>
+                                    <br />
+                            		<br>
+                           		  	<div class="textbox">
+                            			<h3>Editor</h3>
+                            		</div>
+                            		<br />
+                                    <h2>경명호</h2>
+                            		
+                       		  </div>
+                            </a>
+                        </div>
+                	</div>
+            	</div>
+            	<div class="right">
+            		<div class="m3" >
+                    	<div class="topbox" style="">
+                    		<a href="Moon.html">
+                				<div class="box">
+                					<div class="boximg">
+                                		<img src="img/moon.jpg" class="img_roll" width="100%">
+                                	</div>
+                            		<br />
+                            		<br>
+                            		<div class="textbox">
+                            			<h3>MOON</h3>
+                            		</div>
+                            		<br />
+                            		<p>
+                            			지구의 달은 참 아름다워요.<br>
+                            			오늘은 밤 하늘을 올려다 보는건 어때요?<br>
+                            		</p>
+                        		</div>
+                        	</a>
+                        </div>
+                        <div class="topbox">
+                        	<a href="#">
+                    			<div class="box">
+                                	<div class="boximg">
+                                		<img src="img/sun.png" class="img_roll" width="100%">
+                                	</div>
+                                    <br />
+                            		<br>
+                           		  	<div class="textbox">
+                            			<h3>SolarSystem</h3>
+                            		</div>
+                            		<br />
+                                    <h2>태양</h2>
+                        		</div>
+                            </a>
+                         </div>
+                		<div class="boximg" style="margin-left:1px">
+                			<img src="img/cus.png" class="img_roll" width="100%">
+                            
+                        </div>
+                    </div>
+            	</div>
+            </div>
+            
+	</body>
+</html>
